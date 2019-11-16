@@ -8,9 +8,10 @@
 
 img {
 	width: 350px;
-	display: flex;
+/*	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center;*/
+	position: absolute;
 
     animation-name: spin;
     animation-duration: 100000ms;
@@ -25,4 +26,15 @@ img {
     } to { 
         transform: rotate(360deg); 
     }
+}
+
+h1 {
+	position: absolute;
+	z-index: 2;
+	color: #000000;
+	font-size: 42px;
+}
+
+h1:hover {
+	scale: 1.1;
 }
