@@ -77,7 +77,7 @@ section.intro {
     align-items: center;
     height: 70%;
     /*border-bottom: 1px solid black;*/
-    border-bottom: 1px solid black;
+    /*border-bottom: 1px solid black;*/
 }
 
 .intro-text {
@@ -115,6 +115,10 @@ section.intro {
 	margin-top: 6px;
 }
 
+.line {
+	border-top:1px solid black;
+}
+
 .spinner {
     display: grid;
 }
@@ -145,6 +149,7 @@ section.intro {
 .collection-title {
 	width: 100%;
 	border-bottom: 1px solid black;
+		border-top: 1px solid black;
 }
 .collection-title p {
 	font-family: Classic Sans;
@@ -157,6 +162,7 @@ section.intro {
 section.collection {
 	display: flex;
 	flex-direction: row;
+
 }
 
 a.item-link {
@@ -208,4 +214,16 @@ a.item-link:hover img{
 	font-size: 18px;
 	text-transform: uppercase;
 	margin-bottom: 12px;
+}
+
+.info {
+	font-size: 42px;
+	padding: 14px;
+	border-bottom: 1px solid black;
+}
+
+footer {
+	width: 100%;
+	border-top: 1px solid black;
+	padding: 6px 14px;
 }
