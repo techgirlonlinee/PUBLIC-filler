@@ -31,6 +31,10 @@ body {
     overflow-y: auto;
 }
 
+.rect::-webkit-scrollbar {
+  display: none;
+}
+
 #logo {
     /*	width: 68px;*/
     display: inline-flex;
