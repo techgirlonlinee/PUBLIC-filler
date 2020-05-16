@@ -48,8 +48,11 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 14px;
+    padding: 14px 24px;
     border-bottom: 1px solid black;
+position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 nav a {
@@ -87,7 +90,7 @@ section.intro {
 	justify-content: space-around;
     border-right: 1px solid black;
     /*padding-left: 14px;*/
-    padding: 14px;
+    padding: 14px 24px;
 
 }
 
@@ -135,6 +138,7 @@ section.intro {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
+z-index: -1;
 }
 
 @keyframes spin {
@@ -177,6 +181,11 @@ a.item-link:hover {
 a.item-link:hover img{
 	background: rgba(60,129,73,0.5);
 	z-index: 5;
+	opacity: 0.5;
+}
+
+a.item-link:hover img {
+    
 }
 .item-link {
 	width: 50%;
@@ -217,13 +226,22 @@ a.item-link:hover img{
 }
 
 .info {
-	font-size: 42px;
-	padding: 14px;
+	/*font-size: 42px;*/
+	font-size: 22px;
+	padding: 14px 24px;
 	border-bottom: 1px solid black;
+	display: flex;
+	flex-direction: row;
+}
+
+.info p {
+	width: 44%;
 }
 
 footer {
 	width: 100%;
 	border-top: 1px solid black;
-	padding: 6px 14px;
+	padding: 6px 24px;
+	font-family: Classic Sans;
+	font-size: 12px;
 }
