@@ -1,0 +1,23 @@
+{
+  "name": "public-filler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/.bin/node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techgirlonlinee/PUBLIC-filler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techgirlonlinee/PUBLIC-filler/issues"
+  },
+  "homepage": "https://github.com/techgirlonlinee/PUBLIC-filler#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
