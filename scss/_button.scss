@@ -1,0 +1,33 @@
+.btn {
+  display: inline-block;
+  height: calc(var(--btn-height) * 1rem);
+  background-color: var(--link-color);
+  text-align: center;
+  color: var(--jet-color);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.625rem 3.125rem;
+  border-radius: 25px;
+
+  &:hover {
+    color: var(--jet-color);
+    opacity: 0.7;
+  }
+
+  &-outline {
+    background-color: transparent;
+    border: $border;
+    color: var(--link-color);
+
+    &:hover {
+      color: var(--link-color);
+    }
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 0.625rem;
+    padding: 0.625rem 1.625rem;
+    height: calc(var(--btn-height) * 0.7rem);
+  }
+}

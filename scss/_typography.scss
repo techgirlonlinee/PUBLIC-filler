@@ -1,0 +1,17 @@
+body {
+  font-family: "Classic Sans";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Classic Sans";
+  src: url("../assets/fonts/ClassicSansRoman-Italic.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Classic Sans";
+  src: url("../assets/fonts/ClassicSansRoman.otf");
+  font-weight: 400;
+}
