@@ -1,0 +1,21 @@
+:root {
+  --green: #3a8148;
+  --red: #cd4b3d;
+  --black: #000000;
+  --blue: #274199;
+  --oat: #cab393;
+  --white: #ffffff;
+
+  --border-color: #000000;
+  // Default Height
+  --bar-height: 7.5;
+  --btn-height: 3.125;
+}
+
+$border: 1px solid var(--border-color);
+$border-top: 1px solid var(--border-color);
+$border-bottom: 1px solid var(--border-color);
+$border-left: 1px solid var(--border-color);
+$border-right: 1px solid var(--border-color);
+
+$gen-spacing: 0.75rem;
