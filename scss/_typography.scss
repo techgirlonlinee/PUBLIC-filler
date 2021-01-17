@@ -1,7 +1,9 @@
 body {
-  font-family: "Classic Sans";
+  font-family: "Classic Sans", Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  line-height: 1.15;
 }
 
 @font-face {
@@ -12,6 +14,77 @@ body {
 
 @font-face {
   font-family: "Classic Sans";
-  src: url("../assets/fonts/ClassicSansRoman.otf");
+  src: url("../assets/fonts/ClassicSansRoman.otf"),
+    url("../assets/fonts/ClassicSansRoman.woff");
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "Classic Sans";
+  src: url("../assets/fonts/ClassicSansMedium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Classic Sans";
+  src: url("../assets/fonts/ClassicSansBold.otf");
+  font-weight: 600;
+}
+
+h1 {
+  line-height: 1.156;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+}
+
+h2 {
+  letter-spacing: 0.4px;
+  font-weight: 400;
+}
+
+h3 {
+  letter-spacing: 0.7px;
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+h5 {
+  letter-spacing: 0.35px;
+  font-weight: 400;
+}
+
+h6 {
+  font-weight: 600;
+  letter-spacing: 0.35px;
+}
+
+@mixin small-body() {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.25;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+@mixin large-body() {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.25;
+  font-size: 1.375rem;
+}
+
+@mixin link() {
+  font-size: 0.875rem;
+  letter-spacing: 0.4px;
+}
+
+@mixin secondary-link() {
+  font-size: 0.625rem;
+  letter-spacing: 0.4px;
+}
+
+p {
+  @include small-body();
 }

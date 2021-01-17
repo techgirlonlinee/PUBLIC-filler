@@ -1,82 +1,21 @@
 :root {
-  --yellow-h: 36;
-  --yellow-s: 100%;
-  --yellow-l: 51%;
+  --green: #3a8148;
+  --red: #cd4b3d;
+  --black: #000000;
+  --blue: #274199;
+  --oat: #cab393;
+  --white: #ffffff;
 
-  --blue-h: 195;
-  --blue-s: 100%;
-  --blue-l: 49%;
-
-  --pink-h: 324;
-  --pink-s: 84%;
-  --pink-l: 65%;
-
-  --purple-h: 267;
-  --purple-s: 72%;
-  --purple-l: 63%;
-
-  --jet-h: 0;
-  --jet-s: 0%;
-  --jet-l: 19%;
-
-  --yellow-color: hsl(var(--yellow-h), var(--yellow-s), var(--yellow-l));
-  --blue-color: hsl(var(--blue-h), var(--blue-s), var(--blue-l));
-  --pink-color: hsl(var(--pink-h), var(--pink-s), var(--pink-l));
-  --purple-color: hsl(var(--purple-h), var(--purple-s), var(--purple-l));
-  --jet-color: hsl(var(--jet-h), var(--jet-s), var(--jet-l));
-  --text-color: hsl(0, 0%, 100%);
-  --link-color: hsl(0, 0%, 100%);
-  --link-hover: hsl(0, 0%, 100%);
-  --border-color: hsl(0, 0%, 100%);
-  --pin-color: hsl(0, 0%, 100%);
-
-  --yellow-color-darker: hsl(
-    var(--yellow-h),
-    var(--yellow-l),
-    calc(var(--yellow-l) - 25%)
-  );
-  --yellow-color-darkest: hsl(
-    var(--yellow-h),
-    var(--yellow-l),
-    calc(var(--yellow-l) - 35%)
-  );
-
-  --blue-color-darker: hsl(
-    var(--blue-h),
-    var(--blue-l),
-    calc(var(--blue-l) - 30%)
-  );
-  --blue-color-darkest: hsl(
-    var(--blue-h),
-    var(--blue-l),
-    calc(var(--blue-l) - 35%)
-  );
-
-  --pink-color-darker: hsl(
-    var(--pink-h),
-    var(--pink-l),
-    calc(var(--pink-l) - 45%)
-  );
-  --pink-color-darkest: hsl(
-    var(--pink-h),
-    var(--pink-l),
-    calc(var(--pink-l) - 35%)
-  );
-
-  --purple-color-darker: hsl(
-    var(--purple-h),
-    var(--purple-l),
-    calc(var(--purple-l) - 40%)
-  );
-  --purple-color-darkest: hsl(
-    var(--purple-h),
-    var(--purple-l),
-    calc(var(--purple-l) - 35%)
-  );
-
+  --border-color: #000000;
   // Default Height
   --bar-height: 7.5;
   --btn-height: 3.125;
 }
 
 $border: 1px solid var(--border-color);
+$border-top: 1px solid var(--border-color);
+$border-bottom: 1px solid var(--border-color);
+$border-left: 1px solid var(--border-color);
+$border-right: 1px solid var(--border-color);
+
+$gen-spacing: 0.75rem;
