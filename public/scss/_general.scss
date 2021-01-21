@@ -1,0 +1,433 @@
+// * {
+//   box-sizing: border-box;
+// }
+
+// body {
+//   color: var(--text-color);
+//   width: 100%;
+//   min-height: 100vh;
+//   overflow-x: hidden;
+// }
+
+// #app {
+//   width: 100%;
+//   min-height: inherit;
+// }
+
+// a {
+//   text-decoration: none;
+//   outline: none;
+//   color: var(--link-color);
+
+//   &:hover {
+//     color: var(--link-hover);
+//   }
+// }
+
+// a:hover,
+// a:focus,
+// button:focus {
+//   outline: none;
+// }
+
+// nav,
+// section.intro,
+// section.second-intro,
+// footer {
+//   padding: $gen-spacing;
+//   border-bottom: $border;
+// }
+
+// nav {
+//   display: flex;
+//   flex-direction: row;
+//   width: 100%;
+//   justify-content: space-between;
+//   border-bottom: $border;
+
+//   .get-involved {
+//     margin-left: 12px;
+//   }
+// }
+
+// section.hero {
+//   height: calc(100vh - 42px);
+
+//   h1 {
+//     // animation-name: spin, depth;
+//     animation-timing-function: linear;
+//     animation-iteration-count: infinite;
+//     animation-duration: 10s;
+//     width: fit-content;
+//     margin: auto;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: calc(100vh - 8rem);
+//   }
+
+//   .hero-descript {
+//     display: flex;
+//     position: absolute;
+//     bottom: 0px;
+//     border-top: $border;
+//     border-bottom: $border;
+//     padding-top: -12px;
+//     .descript-text {
+//       display: flex;
+//       margin: 24px;
+
+//       p {
+//         width: 50%;
+//         font-family: "Times New Roman", Times, serif;
+//         text-align: justify;
+//         margin-top: 0;
+//         margin-bottom: 0;
+//       }
+//       p:first-child {
+//         margin-right: 24px;
+//       }
+//     }
+//   }
+// }
+
+// @keyframes spin {
+//   from {
+//     transform: rotateY(0deg);
+//   }
+//   to {
+//     transform: rotateY(-360deg);
+//   }
+// }
+// @keyframes depth {
+//   0 {
+//     text-shadow: 0 0 black;
+//   }
+//   25% {
+//     text-shadow: 5px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+//   }
+//   50% {
+//     text-shadow: 0 0 black;
+//   }
+//   75% {
+//     text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black,
+//       -5px 0 black;
+//   }
+//   100% {
+//     text-shadow: 0 0 black;
+//   }
+// }
+
+// section.stamps {
+//   height: 75vh;
+//   border-bottom: $border;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+
+//   h3.instructions {
+//     margin: 0 auto;
+//     width: fit-content;
+//     opacity: 0.3;
+//   }
+// }
+// .product-list {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   h2 {
+//     padding: 24px 24px;
+//     line-height: 1.4;
+//     border-bottom: $border;
+//     margin: 0;
+//     width: 100vw;
+//   }
+// }
+
+// .product {
+//   display: flex;
+//   border-bottom: $border;
+//   .product-info,
+//   .product-images {
+//     width: 50vw;
+//   }
+// }
+
+// .product-info {
+//   padding: 24px;
+//   border-right: $border;
+//   .collab {
+//     margin-top: 12px;
+//     margin-bottom: 24px;
+//     h6.role {
+//       font-weight: 400;
+//     }
+//   }
+//   .collab:nth-child(2) {
+//     margin-bottom: 24px;
+//   }
+//   .synopsis {
+//     display: flex;
+//     flex-direction: column;
+//     position: relative;
+//     svg {
+//       position: absolute;
+//       bottom: -50%;
+//       right: 9%;
+//     }
+//   }
+// }
+
+// .product-images {
+//   display: flex;
+//   flex-direction: row;
+
+//   .main-image {
+//     border-right: $border;
+//     width: 80%;
+//     img {
+//       height: 62vh;
+//       padding: 48px;
+//     }
+//   }
+//   .secondary-images {
+//     flex-direction: column;
+//     width: 20%;
+//     .small-image {
+//       height: 25%;
+//       border-bottom: $border;
+//       display: flex;
+//       flex-direction: column;
+//       text-align: center;
+//       justify-content: center;
+//       img {
+//         width: 86px;
+//         margin: auto;
+//       }
+//     }
+//     .small-image:last-child {
+//       border-bottom: none;
+//     }
+//   }
+// }
+
+// .subscription {
+//   border-bottom: $border;
+//   h5 {
+//     padding-top: 24px;
+//     padding-left: 24px;
+//   }
+//   // h2 {
+//   //   padding: 0 24px 24px 24px;
+//   //   opacity: 0.3;
+//   // }
+//   input[type="email"] {
+//     width: 100%;
+//     padding: 0 24px 24px 24px;
+//     margin: 8px 0;
+//     box-sizing: border-box;
+//     border: none;
+//     font-size: 4rem;
+//     opacity: 0.5;
+//     outline: none;
+//   }
+// }
+
+// .brand-info {
+//   display: flex;
+//   flex-direction: row;
+//   border-bottom: $border;
+//   padding-bottom: 6px;
+//   padding-top: 6px;
+//   div {
+//     width: 33%;
+//     padding-left: 24px;
+//   }
+//   div:last-child {
+//     padding-right: 12px;
+//   }
+// }
+
+// .republic {
+//   h2 {
+//     margin-left: 24px;
+//     margin-top: 24px;
+//   }
+//   a:hover {
+//     border-bottom: 4px solid #000;
+//   }
+//   .contributors {
+//     margin-top: 48px;
+//     margin-bottom: 24px;
+//     .contributor {
+//       margin-bottom: 18px;
+//       display: flex;
+//       flex-direction: row;
+//       padding-left: 24px;
+
+//       .name {
+//         width: 20%;
+//         font-family: "Classic Sans", Arial, Helvetica, sans-serif;
+//         font-weight: 500;
+//       }
+//       .country {
+//         width: 20%;
+//       }
+//       .contact-links {
+//         display: inline-flex;
+//         padding: 0;
+//         font-family: "Times New Roman", Times, serif;
+//         width: 20%;
+//         a {
+//           border-bottom: 1px solid #fff;
+//         }
+//         a:hover {
+//           border-bottom: 1px solid green;
+//         }
+//       }
+//       p {
+//         margin: 0;
+//         padding: 0;
+//       }
+//     }
+//     .contributor:hover {
+//       color: green;
+//     }
+//   }
+// }
+
+body {
+  font-family: Classic-Sans, Arial, Helvetica, sans-serif;
+  background-color: var(--backgroud-color);
+  color: var(--primary-text-color);
+  margin: 0 auto;
+  position: relative;
+}
+
+.desktop {
+  display: initial;
+}
+
+.mobile {
+  display: none;
+}
+
+a {
+  color: var(--primary-text-color);
+}
+
+a:hover {
+  color: var(--primary-text-color);
+}
+
+img {
+  width: 100%;
+}
+
+/* Header Starts Here */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 calc(var(--base-margin) * 2);
+  height: calc(var(--base-margin) * 3.75);
+
+  .logo {
+    width: calc(var(--base-margin) * 5.333);
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+/* Header Ends Here */
+
+/* Hero Starts Here */
+
+.hero {
+  height: calc(100vh - (var(--base-margin) * 3.75));
+  display: flex;
+  flex-direction: column;
+
+  &-spinner {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+
+    img {
+      width: 33.33%;
+      animation-name: spin, depth;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 10s;
+    }
+  }
+
+  &-description {
+    padding: calc(var(--base-margin) * 2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: calc(var(--base-margin) * 2);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
+    p {
+      font-family: "Times New Roman", Times, serif;
+      text-align: justify;
+      font-size: calc(var(--base-font) * 1.333);
+      line-height: 1.25;
+    }
+  }
+}
+
+.stamp {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+@keyframes depth {
+  0% {
+    text-shadow: 0 0 var(--black);
+  }
+  25% {
+    text-shadow: 5px 0 var(--black), 2px 0 var(--black), 3px 0 var(--black),
+      4px 0 var(--black), 5px 0 var(--black);
+  }
+  50% {
+    text-shadow: 0 0 var(--black);
+  }
+  75% {
+    text-shadow: -1px 0 var(--black), -2px 0 var(--black), -3px 0 var(--black),
+      -4px 0 var(--black), -5px 0 var(--black);
+  }
+  100% {
+    text-shadow: 0 0 var(--black);
+  }
+}
+
+/* Hero Ends Here */
+
+@media only screen and (max-width: 1440px) {
+  :root {
+    --base-font: 75%;
+  }
+}

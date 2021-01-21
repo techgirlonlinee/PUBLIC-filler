@@ -2,22 +2,24 @@
   "name": "public-filler",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node_modules/.bin/node-sass --watch scss -o css"
+    "build": "node_modules/.bin/node-sass --watch public/scss -o public/css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/techgirlonlinee/PUBLIC-filler.git"
   },
-  "author": "",
+  "author": "Ankit Karnany <ankitkarnany@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/techgirlonlinee/PUBLIC-filler/issues"
   },
   "homepage": "https://github.com/techgirlonlinee/PUBLIC-filler#readme",
   "dependencies": {
-    "node-sass": "^4.14.1"
+    "@dogstudio/highway": "^2.2.1",
+    "express": "^4.17.1",
+    "node-sass": "^4.10.0"
   }
 }
