@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node_modules/.bin/node-sass --watch public/scss -o public/css"
+    "build": "node_modules/.bin/node-sass --watch scss -o css"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,6 @@
   "homepage": "https://github.com/techgirlonlinee/PUBLIC-filler#readme",
   "dependencies": {
     "@dogstudio/highway": "^2.2.1",
-    "express": "^4.17.1",
     "node-sass": "^4.10.0"
   }
 }
