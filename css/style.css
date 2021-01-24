@@ -236,7 +236,8 @@ img {
     .header .marker .color {
       width: calc(var(--base-margin) * 1);
       height: calc(var(--base-margin) * 1);
-      margin-right: calc(var(--base-margin) * 0.5833); }
+      margin-right: calc(var(--base-margin) * 0.5833);
+      cursor: pointer; }
       .header .marker .color.red {
         background-color: var(--red); }
       .header .marker .color.green {
@@ -303,12 +304,17 @@ img {
       font-size: calc(var(--base-font) * 1.333);
       line-height: 1.25; }
 
-.stamp {
+.stamps {
+  position: relative;
   height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid var(--border-color); }
+  border-bottom: 1px solid var(--border-color);
+  cursor: crosshair;
+  user-select: none; }
+  .stamps .mission {
+    position: absolute; }
 
 .product-list .product {
   border-bottom: 1px solid var(--border-color); }
@@ -402,8 +408,7 @@ img {
     font-family: "Times New Roman", Times, serif;
     text-align: justify;
     font-size: calc(var(--base-font) * 1.333);
-    line-height: 1.25;
-    margin-bottom: calc(var(--base-margin) * 1.688); }
+    line-height: 1.25; }
   .brand-info div p:last-child {
     margin-bottom: 0; }
 

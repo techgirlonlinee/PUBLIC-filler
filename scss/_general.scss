@@ -60,6 +60,7 @@ img {
       width: calc(var(--base-margin) * 1);
       height: calc(var(--base-margin) * 1);
       margin-right: calc(var(--base-margin) * 0.5833);
+      cursor: pointer;
 
       &.red {
         background-color: var(--red);
@@ -158,12 +159,19 @@ img {
   }
 }
 
-.stamp {
+.stamps {
+  position: relative;
   height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--border-color);
+  cursor: crosshair;
+  user-select: none;
+
+  .mission {
+    position: absolute;
+  }
 }
 
 .product-list {
@@ -302,7 +310,6 @@ img {
     text-align: justify;
     font-size: calc(var(--base-font) * 1.333);
     line-height: 1.25;
-    margin-bottom: calc(var(--base-margin) * 1.688);
   }
 
   div {
