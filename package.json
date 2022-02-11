@@ -19,6 +19,6 @@
   "homepage": "https://github.com/techgirlonlinee/PUBLIC-filler#readme",
   "dependencies": {
     "@dogstudio/highway": "^2.2.1",
-    "node-sass": "^4.10.0"
+    "node-sass": "^7.0.0"
   }
 }
